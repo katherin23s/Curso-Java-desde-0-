@@ -351,3 +351,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Curso-Java-desde-0-/nbproject/private/
+/Curso-Java-desde-0-/build/
