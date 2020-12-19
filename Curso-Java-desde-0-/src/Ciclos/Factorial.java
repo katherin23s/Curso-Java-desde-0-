@@ -19,8 +19,30 @@ public class Factorial {
     public static void main(String[] args) {
         // FACTORIAL
         Scanner entrada = new Scanner(System.in);
-        int numero=0;
-        
+        int numero= entrada.nextInt();
+        int num=1;
+        int num1=1;
+        int factorial=0;
+        System.out.print("Ingresa numero");
+      
+      
+        for(int i=1; i<=numero; i++){
+         // num1=i;
+          //numero = (i);//*(num1-1);
+        //  factorial=numero;
+          //factorial *=i;
+    /*    numero *=numero--;
+           System.out.print("Factorial: "+numero);
+             System.out.print("num: "+num);*/
+   // num=i;
+   // num1=num-1;
+    num = num*i;
+    
+      System.out.print("Factorial: "+num);
+
+    
+        }
+       
     }
     
 }
