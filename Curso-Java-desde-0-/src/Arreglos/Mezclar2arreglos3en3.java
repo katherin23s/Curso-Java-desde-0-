@@ -11,15 +11,14 @@ import java.util.Scanner;
  *
  * @author key_s
  */
-public class Mezclar2arreglos {
+public class Mezclar2arreglos3en3 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // 46.- MEZCLAR 2 ARREGLOS
-Scanner input = new Scanner (System.in);
-		
+        // MEZCLAR 2 ARREGLOS 3 EN 3
+        Scanner input = new Scanner (System.in);
 		int[] tabla1 = new int[12];
 		int[] tabla2 = new int[12];
 		int[] tabla3 = new int[24];
@@ -42,14 +41,14 @@ Scanner input = new Scanner (System.in);
 		
 		while(i<tabla3.length) {
 			
-			for(int cont=0; cont<1; cont++) {
+			for(int cont=0; cont<3; cont++) {
 				tabla3[i]=tabla1[j];
 				i++;
 				j++;
 			}
 	
 
-			for(int cont=0; cont<1; cont++) {
+			for(int cont=0; cont<3; cont++) {
 				tabla3[i]=tabla2[k];
 				i++;
 				k++;
@@ -60,10 +59,6 @@ Scanner input = new Scanner (System.in);
 		for(i=0; i<tabla3.length; i++) {
 			System.out.print(tabla3[i]+" - ");
 		}
-
-       }
-       
-       
-    
+    }
     
 }
