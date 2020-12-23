@@ -25,11 +25,12 @@ public class PosicionarElementoDeArreglo {
         int resta=0;
         int numero=0;
         int contador=0;
+        int contador2=0;
       //  int posicion;
         
         //Rellenamos la tabla
         System.out.print("Llenar el arreglo");
-        for(int i=0; i<10; i++){
+        for(int i=0; i<8; i++){
         System.out.println("Digite un numero");
         tabla[i]= entrada.nextInt();
         }
@@ -39,53 +40,35 @@ public class PosicionarElementoDeArreglo {
         System.out.print("La posicion es: ");
         n=entrada.nextInt();
         
-        resta=8-n;
+        resta=10-n;
         
-        int valor;
-         //Guardar los elementos a recorrer 8-3
-        for(int i=7; i>=n; i--){
-        ultimo[contador]=tabla[i];
+        int limite=resta-1;
+       // int nLimite= n-1;
+        //Guardar en el otro arrego la diferencia 8 vueltas de mayor hasta n
+        
+        for(int i=n; i<=9; i++){
+        
+        ultimo[contador] = tabla[i];
+      //  System.out.print("Num:"+ultimo[contador]);
         contador++;
-        } 
-        
-
-      //Avanzar n posicion abajo del arreglo
-        //recorre los restantes elementos n posiciones
-        for(int i=resta; i>=0;i--){
-        tabla[i+n]=tabla[i];
-        //System.out.print("Numero: "+ tabla[i+n]);
-        valor=i+n+1;
-        
-        System.out.println("Numero: "+  tabla[i+n]);
+      
         }
-        
-        
-       /*for(int i=0; i<8; i++){
-        System.out.print("Numero: "+ultimo[i]);
-        }*/
-        
-        //Se asigna a tabla el valor de numero
+        //Contador añadir el valor en la posicion
         tabla[n]=numero;
-        
-        
-          //Avanzar n posicion abajo del arreglo
-        //recorre los restantes elementos n posiciones
-        for(int i=resta; i>=0;i--){
-        //Llenando al revez los valores
-            tabla[i+n+1]=tabla[i];
-        }
-   
-      /*  for(int i=0; i<n; i++){
-        tabla[i]=ultimo[i];
-        }*/
-        
-         System.out.print("El nuevo elemento es: ");
-         
-          for(int i=0; i<8; i++){
-        System.out.print("Numero: "+tabla[i]);
-        }
-        
        
+        //Recorremos los valores que estan despues de n
+        //Ingresamos los 8 elementos despues de n+1
+        for(int i=1; i<resta; i++){
+        tabla[n+i]=ultimo[contador2];
+     //   System.out.print("Num:"+tabla[n+i]);
+        contador2++;
+        }
+        
+        
+        for(int i=0; i<10; i++){
+        System.out.print("Num:"+tabla[i]);
+         //contador++;
+        }
     }
     
 }
