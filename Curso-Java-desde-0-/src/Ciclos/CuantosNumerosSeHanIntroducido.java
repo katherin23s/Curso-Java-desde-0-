@@ -23,7 +23,7 @@ public class CuantosNumerosSeHanIntroducido {
         int numero = entrada.nextInt();
         int num=0;
         while(numero>0){
-         System.out.print(numero);
+         System.out.print(num);
          num++;
          System.out.print("Ingresa numero");
          numero = entrada.nextInt();

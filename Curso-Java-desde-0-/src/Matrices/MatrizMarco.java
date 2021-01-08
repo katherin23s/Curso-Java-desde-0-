@@ -38,6 +38,14 @@ public class MatrizMarco {
                 }
             }
         }
+        
+        System.out.println("La matriz es: ");
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+               System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }
     
 }
