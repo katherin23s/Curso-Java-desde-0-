@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -33,7 +33,7 @@ public class MovimientoObjeto2 {
                 break;
             case 2:
                   //Abajo
-                obj1.arriba();
+                obj1.abajo();
                 System.out.println("Pasos abajo"+obj1.y);
                 break;
             case 3:
